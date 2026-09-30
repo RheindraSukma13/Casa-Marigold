@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Casa Marigold</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,500&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="site-nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">Casa <em>Marigold</em></a>
+    <nav class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="is-current">Menu</a>
+      <a href="story.html">Our Story</a>
+      <a href="contact.html">Visit</a>
+    </nav>
+    <a href="contact.html" class="btn btn--primary">Reserve a Table</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <p class="kicker reveal">Made to Share, Built to Linger</p>
+    <h1 class="reveal">The Menu</h1>
+    <p class="page-hero__desc reveal">
+      A short, seasonal menu built around live-fire cooking and heirloom
+      corn. Prices are approximate and change with the season.
+    </p>
+  </section>
+
+  <section class="menu-page">
+    <div class="menu-tabs" id="menu-tabs">
+      <button type="button" class="menu-tab is-active" data-category="starters">Starters</button>
+      <button type="button" class="menu-tab" data-category="mains">Tacos &amp; Mains</button>
+      <button type="button" class="menu-tab" data-category="specialties">Specialties</button>
+      <button type="button" class="menu-tab" data-category="drinks">Drinks &amp; Dessert</button>
+    </div>
+
+    <div class="menu-list" id="menu-list">
+
+      <!-- Starters -->
+      <div class="menu-entry" data-category="starters">
+        <div class="menu-entry__top"><h3>Live-Fire Corn</h3><span>$9</span></div>
+        <p>Grilled heirloom corn, cotija, chile-lime butter, smoked salt.</p>
+      </div>
+      <div class="menu-entry" data-category="starters">
+        <div class="menu-entry__top"><h3>Ceviche Verde</h3><span>$14</span></div>
+        <p>Citrus-cured fish, avocado, serrano, crisp tortilla.</p>
+      </div>
+      <div class="menu-entry" data-category="starters">
+        <div class="menu-entry__top"><h3>Queso Fundido</h3><span>$12</span></div>
+        <p>Melted cheese, roasted poblano, chorizo, warm tortillas.</p>
+      </div>
+
+      <!-- Mains -->
+      <div class="menu-entry" data-category="mains" style="display:none;">
+        <div class="menu-entry__top"><h3>Copper Birria</h3><span>$22</span></div>
+        <p>Slow-braised beef birria, consommé, hand-pressed tortillas.</p>
+      </div>
+      <div class="menu-entry" data-category="mains" style="display:none;">
+        <div class="menu-entry__top"><h3>Al Pastor Tacos</h3><span>$16</span></div>
+        <p>Spit-roasted pork, pineapple, onion, cilantro, three tacos.</p>
+      </div>
+      <div class="menu-entry" data-category="mains" style="display:none;">
+        <div class="menu-entry__top"><h3>Grilled Snapper</h3><span>$28</span></div>
+        <p>Whole grilled snapper, salsa macha, charred lime.</p>
+      </div>
+
+      <!-- Specialties -->
+      <div class="menu-entry" data-category="specialties" style="display:none;">
+        <div class="menu-entry__top"><h3>Mole Negro</h3><span>$24</span></div>
+        <p>Twenty-ingredient mole, roasted squash, toasted sesame.</p>
+      </div>
+      <div class="menu-entry" data-category="specialties" style="display:none;">
+        <div class="menu-entry__top"><h3>Cochinita Pibil</h3><span>$23</span></div>
+        <p>Achiote-marinated pork, banana leaf, pickled red onion.</p>
+      </div>
+      <div class="menu-entry" data-category="specialties" style="display:none;">
+        <div class="menu-entry__top"><h3>Chile en Nogada</h3><span>$26</span></div>
+        <p>Stuffed poblano, walnut cream sauce, pomegranate.</p>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-entry" data-category="drinks" style="display:none;">
+        <div class="menu-entry__top"><h3>Mezcal Flight</h3><span>$18</span></div>
+        <p>Three house mezcals, chosen by the bar team.</p>
+      </div>
+      <div class="menu-entry" data-category="drinks" style="display:none;">
+        <div class="menu-entry__top"><h3>Tamarind Margarita</h3><span>$14</span></div>
+        <p>Tequila, tamarind, lime, chile-salt rim.</p>
+      </div>
+      <div class="menu-entry" data-category="drinks" style="display:none;">
+        <div class="menu-entry__top"><h3>Horchata Flan</h3><span>$10</span></div>
+        <p>Silky flan, cinnamon, toasted rice.</p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="nav__brand">Casa <em>Marigold</em></span>
+    <nav class="footer__links">
+      <a href="menu.html">Menu</a>
+      <a href="story.html">Our Story</a>
+      <a href="contact.html">Visit</a>
+    </nav>
+    <p>&copy; 2026 Casa Marigold. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

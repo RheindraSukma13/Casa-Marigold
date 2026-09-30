@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa Marigold — Modern Mexican, Lit by Copper Light</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,500&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="site-nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">Casa <em>Marigold</em></a>
+    <nav class="nav__links">
+      <a href="index.html" class="is-current">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="story.html">Our Story</a>
+      <a href="contact.html">Visit</a>
+    </nav>
+    <a href="contact.html" class="btn btn--primary">Reserve a Table</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__orb hero__orb--one" aria-hidden="true"></div>
+    <div class="hero__orb hero__orb--two" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="kicker reveal">A modern Mexican table</p>
+      <h1 class="hero__title" data-stagger>Flavor, lit by<br>copper and marigold<br>light.</h1>
+      <p class="hero__desc reveal">
+        Casa Marigold is a small dining room built around live-fire
+        cooking, heirloom corn, and a wine and mezcal list chosen to
+        match. Come for the tasting menu, stay for the mezcal.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="menu.html" class="btn btn--dark">Explore the Menu</a>
+        <a href="contact.html" class="btn btn--outline">Reserve a Table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>HAND-PRESSED TORTILLAS</span>
+      <span>·</span>
+      <span>LIVE-FIRE GRILL</span>
+      <span>·</span>
+      <span>HOUSE MEZCAL</span>
+      <span>·</span>
+      <span>HEIRLOOM CORN</span>
+      <span>·</span>
+      <span>SLOW-BRAISED BARBACOA</span>
+      <span>·</span>
+      <span>HAND-PRESSED TORTILLAS</span>
+      <span>·</span>
+      <span>LIVE-FIRE GRILL</span>
+      <span>·</span>
+      <span>HOUSE MEZCAL</span>
+      <span>·</span>
+      <span>HEIRLOOM CORN</span>
+      <span>·</span>
+      <span>SLOW-BRAISED BARBACOA</span>
+      <span>·</span>
+    </div>
+  </div>
+
+  <!-- SIGNATURE PREVIEW -->
+  <section class="signature">
+    <div class="section-head reveal">
+      <p class="kicker">Signature Dishes</p>
+      <h2>Three plates people talk about</h2>
+    </div>
+
+    <div class="signature__grid">
+      <a href="menu.html" class="signature__card reveal">
+        <span class="signature__num">01</span>
+        <h3>Live-Fire Corn</h3>
+        <p>Grilled heirloom corn, cotija, chile-lime butter, smoked salt.</p>
+      </a>
+      <a href="menu.html" class="signature__card reveal">
+        <span class="signature__num">02</span>
+        <h3>Copper Birria</h3>
+        <p>Slow-braised beef birria, consommé, hand-pressed tortillas.</p>
+      </a>
+      <a href="menu.html" class="signature__card reveal">
+        <span class="signature__num">03</span>
+        <h3>Mole Negro</h3>
+        <p>Twenty-ingredient mole, roasted squash, toasted sesame.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats reveal" id="stats">
+    <div class="stats__grid">
+      <div class="stat">
+        <span class="stat__value" data-count-to="6">0</span>
+        <span class="stat__label">Years of Craft</span>
+      </div>
+      <div class="stat">
+        <span class="stat__value" data-count-to="120">0</span>
+        <span class="stat__label">Dishes Perfected</span>
+      </div>
+      <div class="stat">
+        <span class="stat__value" data-count-to="40">0</span>
+        <span class="stat__label">Agave Spirits Poured</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials reveal">
+    <div class="section-head">
+      <p class="kicker">From the Dining Room</p>
+      <h2>Quiet nights, loud flavor</h2>
+    </div>
+
+    <div class="carousel" id="carousel">
+      <div class="carousel__track" id="carousel-track">
+        <blockquote class="carousel__slide">
+          <p>"The mole alone is worth the reservation. Best table in the city for a slow dinner."</p>
+          <cite>— A regular guest</cite>
+        </blockquote>
+        <blockquote class="carousel__slide">
+          <p>"Warm room, sharp cooking. The birria consommé is the kind of thing you think about for days."</p>
+          <cite>— First-time diner</cite>
+        </blockquote>
+        <blockquote class="carousel__slide">
+          <p>"Small menu, no weak dishes. The mezcal list alone deserves its own visit."</p>
+          <cite>— Weekend regular</cite>
+        </blockquote>
+      </div>
+      <div class="carousel__controls">
+        <button type="button" id="carousel-prev" aria-label="Previous review">‹</button>
+        <div class="carousel__dots" id="carousel-dots"></div>
+        <button type="button" id="carousel-next" aria-label="Next review">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner reveal">
+    <h2>Tables are limited.<br>Reserve yours.</h2>
+    <a href="contact.html" class="btn btn--primary">Reserve a Table</a>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="nav__brand">Casa <em>Marigold</em></span>
+    <nav class="footer__links">
+      <a href="menu.html">Menu</a>
+      <a href="story.html">Our Story</a>
+      <a href="contact.html">Visit</a>
+    </nav>
+    <p>&copy; 2026 Casa Marigold. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

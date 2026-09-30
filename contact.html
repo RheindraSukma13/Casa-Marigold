@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visit Us: Casa Marigold</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,500&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="site-nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">Casa <em>Marigold</em></a>
+    <nav class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="story.html">Our Story</a>
+      <a href="contact.html" class="is-current">Visit</a>
+    </nav>
+    <a href="contact.html" class="btn btn--primary">Reserve a Table</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <p class="kicker reveal">Visit Us</p>
+    <h1 class="reveal">Come sit at our table.</h1>
+    <p class="page-hero__desc reveal">
+      We hold a short reservation list every night. Book ahead, or send
+      us a request below and we'll confirm by email.
+    </p>
+  </section>
+
+  <section class="visit-page">
+    <div class="visit-page__info reveal">
+      <div class="visit-row">
+        <h3>Address</h3>
+        <p>214 Marigold Lane, Arts District</p>
+      </div>
+      <div class="visit-row">
+        <h3>Hours</h3>
+        <p>Tuesday to Saturday: 5:00 PM to 11:00 PM<br>Closed Sunday &amp; Monday</p>
+      </div>
+      <div class="visit-row">
+        <h3>Contact</h3>
+        <p>hello@casamarigold.co<br>+1 (555) 214 9021</p>
+      </div>
+      <a href="https://www.google.com/maps/search/?api=1&query=214+Marigold+Lane+Arts+District" target="_blank" rel="noopener" class="btn btn--dark">Get Directions</a>
+    </div>
+
+    <form class="reserve-form reveal" id="reserve-form">
+      <p class="kicker">Request a Table</p>
+      <div class="reserve-form__row">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Guests</span>
+          <input type="number" name="guests" min="1" max="12" value="2" required>
+        </label>
+      </div>
+      <div class="reserve-form__row">
+        <label>
+          <span>Date</span>
+          <input type="date" name="date" required>
+        </label>
+        <label>
+          <span>Time</span>
+          <input type="time" name="time" required>
+        </label>
+      </div>
+      <label class="reserve-form__full">
+        <span>Notes (optional)</span>
+        <input type="text" name="notes" placeholder="Allergies, special occasion, etc.">
+      </label>
+
+      <button type="submit" class="btn btn--primary reserve-form__submit" id="reserve-submit">
+        <span class="reserve-form__label">Request Table</span>
+      </button>
+
+      <p class="reserve-form__success" id="reserve-success">
+        Thank you! Your request has been noted. We'll confirm by email shortly.
+      </p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="nav__brand">Casa <em>Marigold</em></span>
+    <nav class="footer__links">
+      <a href="menu.html">Menu</a>
+      <a href="story.html">Our Story</a>
+      <a href="contact.html">Visit</a>
+    </nav>
+    <p>&copy; 2026 Casa Marigold. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
